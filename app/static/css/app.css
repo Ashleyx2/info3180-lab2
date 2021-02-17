@@ -1,10 +1,38 @@
+.container {
+    padding: 0em 3em;
+}
+
 body {
     padding-top: 5rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.top {
     text-align: center;
+    background-color: rgb(98, 233, 36);
+    padding: 25px 50px;
 }
 
 img {
     border-radius: 50%;
-    height: 150px;
-    width: 100px;
+    height: 250px;
+    width: 250px;
+}
+
+.stats p{
+    display: inline-block;
+    padding: 25px;
+}
+
+button {
+    background-color: rgb(13, 187, 21);
+    border: none;
+    border-radius: 8px;
+    padding: 5px 40px;
+    font-size: 18px;
+    color: white;
+}
+
+.bottom {
+    text-align: center;
 }

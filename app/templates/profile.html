@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 
-{% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='static/css/profile.css') }}">
-{% endblock %}
-
 {% block main %}
-    <img src="{{url_for('static', filename='me.jpg')}}"/>
-    <h1>Ashley-Ann Ashley</h1>
-    <p>@ashleysquared <br>Old Harbour, Jamaica <br>Joined some date</p>
-    <hr>
-    <p>I am an undergraduate Computer Science student of the University of the West Indies. My current interests include front-end web development and learning French.</p>
+    <div class="container">
+        <div class="top">
+            <img src="{{url_for('static', filename='me.jpg')}}"/>
+            <h1>Ashley-Ann Ashley</h1>
+            <p>@ashleysquared <br>Old Harbour, Jamaica <br>{{ date_joined }}</p>
+        </div>
+        <br>
+        <p>I am an undergraduate Computer Science student of the University of the West Indies. My current interests include front-end web development and learning French.</p>
+        <div class="bottom">
+            <div class="stats">    
+                <p><strong>12</strong> <br>Posts</p>
+                <p><strong>400</strong> <br>Following</p>
+                <p><strong>600</strong> <br>Followers</p>
+            </div>
+            <button>Follow</button>
+        </div>
+    </div>
 {% endblock %}
